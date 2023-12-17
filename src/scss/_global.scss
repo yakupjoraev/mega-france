@@ -37,6 +37,25 @@ body {
   }
 }
 
+h3 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+
+  span {
+    color: var(--primary-color);
+  }
+
+  @media (max-width: $breakpoint992) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    font-size: 24px;
+  }
+}
+
 // Animations
 // Fade
 @keyframes fade {

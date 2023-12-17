@@ -6,15 +6,463 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
   <!-- Header -->
-  
+  <header class="header header--main">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo"> <a class="logo__link" href="#"> <img loading="laz" class="logo__img"
+              src="./img/header/header-logo.svg" alt="logo"> </a> </div>
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Главная</a></li>
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>О нас</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Каталог</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Оплата и доставка</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
 
   <!-- Main Page -->
-  <main></main>
+  <main>
+    <section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__header"></div>
+      <div class="hero__main">
+        <h1 class="hero__title">Опыт. Ответственность. Производительность.</h1>
+        <h2 hidden>Мега-Франц</h2>
+
+        <p class="hero__descr">Несмотря на обилие автосервисов и мастеров в каждом городе, никто из них не сидит без
+          работы: внутренний спрос на авторемонтные услуги остается открытым. Количество машин растет, как новых, так и
+          поддержанных, и все они требуют технической поддержки.</p>
+
+        <a class="hero__btn" href="#">Перейти в каталог</a>
+      </div>
+      <div class="hero__footer">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <img loading="laz" loading="lazy" width="20" height="20" class="hero__link-pic" src="./img/footer/time.png"
+              alt="time">
+
+            <span>Открыто до 20:00</span>
+          </li>
+
+          <li class="hero__item">
+            <a class="hero__link" target="_blank"
+              href="https://yandex.ru/maps/org/mega_frants/35592130500/?ll=37.941610%2C55.751158&z=14">
+              <img loading="laz" loading="lazy" width="20" height="20" class="hero__link-pic"
+                src="./img/footer/maps-flags.png" alt="maps-flags">
+
+              <span>Носовихинское ш., вл247, микрорайон Салтыковка, Балашиха</span>
+            </a>
+          </li>
+
+          <li class="hero__item">
+            <a class="hero__link" href="tel:+79162667374">
+              <img loading="laz" loading="lazy" width="20" height="20" class="hero__link-pic"
+                src="./img/footer/phone.png" alt="phone">
+
+              <span>+7 (916) 266-73-74</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="little-about">
+  <div class="container">
+    <div class="little-about__inner">
+      <div class="little-about__picture">
+        <img loading="laz" src="./img/little-about/little-about-pic.jpg" alt="little-about pic">
+      </div>
+
+      <div class="little-about__info">
+        <h3 class="little-about__title">
+          Немного о <span>компании</span>
+        </h3>
+
+        <h4 class="little-about__label">Добро пожаловать на официальный сайт компании</h4>
+
+        <p class="little-about__descr">Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют
+          глобальную экономическую сеть и при этом — объективно рассмотрены соответствующими инстанциями. В целом,
+          конечно, социально-экономическое развитие требует анализа переосмысления внешнеэкономических политик. </p>
+        <p class="little-about__descr">Являясь всего лишь частью общей картины, независимые государства, вне зависимости
+          от их уровня, должны быть разоблачены. В целом, конечно, современная методология разработки представляет собой
+          интересный эксперимент проверки приоретизации разума над эмоциями.</p>
+
+        <a class="little-about__more" href="#">Читать подробнее...</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="popular">
+  <div class="container">
+    <div class="popular__inner">
+      <h3 class="popular__title">Популярные товары</h3>
+
+      <ul class="popular__list">
+        <li class="popular__item">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-1.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-2.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status not">Нет в наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-3.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status old">
+                <img loading="laz" src="./img/popular/old.png" alt="old icon">
+                <span>Б/У товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-1.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-2.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status not">Нет в наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-3.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status old">
+                <img loading="laz" src="./img/popular/old.png" alt="old icon">
+                <span>Б/У товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a class="popular__btn hero__btn" href="#">Перейти в каталог</a>
+    </div>
+  </div>
+</section>
+    <section class="reviews">
+  <div class="container">
+    <div class="reviews__inner">
+      <div class="reviews__header">
+        <h3 class="reviews__title">
+          Слушайте мнения наших <span>клиентов</span>
+        </h3>
+
+        <p class="reviews__descr">
+          Мы очень гордимся предоставляемым нами сервисом и поддерживаем каждый продукт, который мы перевозим.<br>
+          Ознакомьтесь с отзывами наших довольных клиентов.
+        </p>
+      </div>
+
+      <div class="reviews__slider swiper mySwiper">
+        <div class="reviews__slider-wrapper swiper-wrapper">
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide-top">
+              <div class="reviews__slide-pic">
+                <img loading="laz" src="./img/reviews/pic-1.jpg" alt="user">
+              </div>
+
+              <div class="reviews__slide-info">
+                <h4 class="reviews__slide-name">Евгений Сидорин</h4>
+                <div class="reviews__stars">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <p class="reviews__slide-text">
+              Несмотря на обилие автосервисов и мастеров в каждом городе, никто из них не сидит без работы: внутренний
+              спрос на авторемонтные услуги остается открытым. Количество машин растет, как новых, так и поддержанных, и
+              все они требуют технической поддержки.
+            </p>
+          </div>
+
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide-top">
+              <div class="reviews__slide-pic">
+                <img loading="laz" src="./img/reviews/pic-1.jpg" alt="user">
+              </div>
+
+              <div class="reviews__slide-info">
+                <h4 class="reviews__slide-name">Евгений Сидорин</h4>
+                <div class="reviews__stars">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <p class="reviews__slide-text">
+              Несмотря на обилие автосервисов и мастеров в каждом городе, никто из них не сидит без работы: внутренний
+              спрос на авторемонтные услуги остается открытым. Количество машин растет, как новых, так и поддержанных, и
+              все они требуют технической поддержки.
+            </p>
+          </div>
+
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide-top">
+              <div class="reviews__slide-pic">
+                <img loading="laz" src="./img/reviews/pic-1.jpg" alt="user">
+              </div>
+
+              <div class="reviews__slide-info">
+                <h4 class="reviews__slide-name">Евгений Сидорин</h4>
+                <div class="reviews__stars">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <p class="reviews__slide-text">
+              Несмотря на обилие автосервисов и мастеров в каждом городе, никто из них не сидит без работы: внутренний
+              спрос на авторемонтные услуги остается открытым. Количество машин растет, как новых, так и поддержанных, и
+              все они требуют технической поддержки.
+            </p>
+          </div>
+
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide-top">
+              <div class="reviews__slide-pic">
+                <img loading="laz" src="./img/reviews/pic-1.jpg" alt="user">
+              </div>
+
+              <div class="reviews__slide-info">
+                <h4 class="reviews__slide-name">Евгений Сидорин</h4>
+                <div class="reviews__stars">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <p class="reviews__slide-text">
+              Несмотря на обилие автосервисов и мастеров в каждом городе, никто из них не сидит без работы: внутренний
+              спрос на авторемонтные услуги остается открытым. Количество машин растет, как новых, так и поддержанных, и
+              все они требуют технической поддержки.
+            </p>
+          </div>
+
+          <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide-top">
+              <div class="reviews__slide-pic">
+                <img loading="laz" src="./img/reviews/pic-1.jpg" alt="user">
+              </div>
+
+              <div class="reviews__slide-info">
+                <h4 class="reviews__slide-name">Евгений Сидорин</h4>
+                <div class="reviews__stars">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                  <img loading="laz" src="./img/reviews/star.svg" alt="star">
+                </div>
+              </div>
+            </div>
+            <p class="reviews__slide-text">
+              Несмотря на обилие автосервисов и мастеров в каждом городе, никто из них не сидит без работы: внутренний
+              спрос на авторемонтные услуги остается открытым. Количество машин растет, как новых, так и поддержанных, и
+              все они требуют технической поддержки.
+            </p>
+          </div>
+        </div>
+
+        <div class="reviews__slider-pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="map-contacts">
+  <div class="container">
+    <div class="map-contacts__inner">
+      <div class="map-contacts__map" id="map"></div>
+      <div class="map-contacts__info">
+        <h3 class="map-contacts__title">
+          Наши <span>контакты</span>
+        </h3>
+
+        <h4 class="map-contacts__label">Мега-Франц</h4>
+
+        <ul class="map-contacts__list">
+          <li class="map-contacts__item">
+            <div class="map-contacts__top">
+              <img loading="lazy" width="28" height="28" src="./img/map-contacts/geo.png" alt="geo">
+              <span>Адрес</span>
+            </div>
+            <a class="map-contacts__link"
+              href="https://yandex.ru/maps/org/mega_frants/35592130500/?ll=37.941610%2C55.751158&z=14">Носовихинское ш.,
+              вл247, микрорайон Салтыковка, Балашиха</a>
+          </li>
+
+          <li class="map-contacts__item">
+            <div class="map-contacts__top">
+              <img loading="lazy" width="28" height="28" src="./img/map-contacts/phone.png" alt="phone">
+              <span>Номер телефона</span>
+            </div>
+            <a class="map-contacts__link" href="tel:+79162667374">+7 (916) 266-73-74</a>
+          </li>
+
+          <li class="map-contacts__item">
+            <div class="map-contacts__top">
+              <img loading="lazy" width="28" height="28" src="./img/map-contacts/time.png" alt="time">
+              <span>График работы</span>
+            </div>
+
+            <p class="map-contacts__text">Отрыто с 09:00 до 20:00</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -103,6 +551,7 @@
 
 </body>
 
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>
