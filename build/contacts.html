@@ -2,25 +2,370 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
-    <!-- Header -->
-    
+  <!-- Header -->
+  <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img loading="laz" class="logo__img" src="./img/header/header-logo-2.svg" alt="logo">
+          </a>
+        </div>
 
-    <!-- Main Page -->
-    <main></main>
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Главная</a></li>
+          <li class="menu__item active"><a href="#" class="menu__item-link" data-scroll>О нас</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Каталог</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Оплата и доставка</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+        </ul>
 
-    <!-- Footer -->
-    
+        <a class="callback hero__btn" href="#">Заказать звонок</a>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Page -->
+  <main>
+    <section class="map-contacts map-contacts--end">
+  <div class="container">
+    <div class="map-contacts__inner">
+      <div class="map-contacts__map" id="map" data-aos="fade-right"></div>
+      <div class="map-contacts__info" data-aos="fade-left">
+        <h3 class="map-contacts__title">
+          Наши <span>контакты</span>
+        </h3>
+
+        <h4 class="map-contacts__label">Мега-Франц</h4>
+
+        <ul class="map-contacts__list">
+          <li class="map-contacts__item">
+            <div class="map-contacts__top">
+              <img loading="lazy" width="28" height="28" src="./img/map-contacts/geo.png" alt="geo">
+              <span>Адрес</span>
+            </div>
+            <a class="map-contacts__link" target="_blank"
+              href="https://yandex.ru/maps/org/mega_frants/35592130500/?ll=37.941610%2C55.751158&z=14">Носовихинское ш.,
+              вл247, микрорайон Салтыковка, Балашиха</a>
+          </li>
+
+          <li class="map-contacts__item">
+            <div class="map-contacts__top">
+              <img loading="lazy" width="28" height="28" src="./img/map-contacts/phone.png" alt="phone">
+              <span>Номер телефона</span>
+            </div>
+            <a class="map-contacts__link" href="tel:+79162667374">+7 (916) 266-73-74</a>
+          </li>
+
+          <li class="map-contacts__item">
+            <div class="map-contacts__top">
+              <img loading="lazy" width="28" height="28" src="./img/map-contacts/time.png" alt="time">
+              <span>График работы</span>
+            </div>
+
+            <p class="map-contacts__text">Отрыто с 09:00 до 20:00</p>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <div class="footer__label">Соц.сети</div>
+          <div class="footer__socials-list">
+            <a class="footer__social" href="#">
+              <img loading="lazy" width="33" height="33" class="footer__social-pic" src="./img/footer/viber.png"
+                alt="viber">
+            </a>
+
+            <a class="footer__social" href="#">
+              <img loading="lazy" width="33" height="33" class="footer__social-pic" src="./img/footer/vk.png" alt="vk">
+            </a>
+
+            <a class="footer__social" href="#">
+              <img loading="lazy" width="33" height="33" class="footer__social-pic" src="./img/footer/whatsapp.png"
+                alt="whatsapp">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="popular">
+  <div class="container">
+    <div class="popular__inner">
+      <h3 class="popular__title">Популярные товары</h3>
+
+      <ul class="popular__list">
+        <li class="popular__item" data-aos="fade-up">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-1.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item" data-aos="fade-up">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-2.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status not">Нет в наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item" data-aos="fade-up">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-3.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status old">
+                <img loading="laz" src="./img/popular/old.png" alt="old icon">
+                <span>Б/У товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item" data-aos="fade-up">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-1.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item" data-aos="fade-up">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-2.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status not">Нет в наличии</div>
+              <div class="popular__status new">
+                <img loading="laz" src="./img/popular/new.png" alt="new icon">
+                <span>Новый товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular__item" data-aos="fade-up">
+          <div class="popular__picture">
+            <img loading="laz" src="./img/popular/popular-3.jpg" alt="">
+          </div>
+
+          <div class="popular__info">
+            <div class="popular__naiming">
+              <h4 class="popular__name">Летающий ниндзя</h4>
+              <div class="popular__price">1596 <span>рублей</span></div>
+            </div>
+
+            <p class="popular__descr">
+              Банальные, но неопровержимые выводы, а также интерактивные прототипы формируют глобальную экономическую
+              сеть и при этом
+            </p>
+
+            <div class="popular__footer">
+              <div class="popular__status have">В наличии</div>
+              <div class="popular__status old">
+                <img loading="laz" src="./img/popular/old.png" alt="old icon">
+                <span>Б/У товар</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a class="popular__btn hero__btn" href="#">Перейти в каталог</a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="footer__logo" href="#">
+        <img loading="lazy" width="220" height="85" class="footer__logo-pic" src="./img/footer/footer-logo.svg"
+          alt="logo">
+      </a>
+
+      <div class="footer__middle">
+        <ul class="footer__list">
+          <li class="footer__label">Меню</li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Главная</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">О нас</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">Каталог</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">Оплата и доставка</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__label">Контакты</li>
+          <li class="footer__item">
+            <a class="footer__link" href="tel:+79162667374">
+              <img loading="lazy" width="20" height="20" class="footer__link-pic" src="./img/footer/phone.png"
+                alt="phone">
+
+              <span>+7 (916) 266-73-74</span>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" target="_blank"
+              href="https://yandex.ru/maps/org/mega_frants/35592130500/?ll=37.941610%2C55.751158&z=14">
+              <img loading="lazy" width="20" height="20" class="footer__link-pic" src="./img/footer/maps-flags.png"
+                alt="maps-flags">
+
+              <span>Носовихинское ш., вл247, микрорайон Салтыковка, Балашиха</span>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <img loading="lazy" width="20" height="20" class="footer__link-pic" src="./img/footer/time.png" alt="time">
+
+            <span>Открыто до 20:00</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__socials">
+        <div class="footer__label">Соц.сети</div>
+        <div class="footer__socials-list">
+          <a class="footer__social" href="#">
+            <img loading="lazy" width="33" height="33" class="footer__social-pic" src="./img/footer/viber.png"
+              alt="viber">
+          </a>
+
+          <a class="footer__social" href="#">
+            <img loading="lazy" width="33" height="33" class="footer__social-pic" src="./img/footer/vk.png" alt="vk">
+          </a>
+
+          <a class="footer__social" href="#">
+            <img loading="lazy" width="33" height="33" class="footer__social-pic" src="./img/footer/whatsapp.png"
+              alt="whatsapp">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/aos.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>

@@ -1,0 +1,263 @@
+.catalog {
+  margin: 60px 0 60px;
+
+  // .catalog__inner
+
+  &__inner {}
+
+  // .catalog__header
+
+  &__header {
+    margin-bottom: 36px;
+  }
+
+  // .catalog__title
+
+  &__title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: normal;
+
+    span {
+      color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 26px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .catalog__form
+
+  &__form {}
+
+  // .catalog__searching
+
+  &__searching {
+    display: flex;
+    align-items: center;
+    max-width: 726px;
+    height: 54px;
+    overflow: hidden;
+    margin: 0 auto 35px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  // .catalog__search-input
+
+  &__search-input {
+    flex: 1 1 auto;
+    height: 100%;
+    padding: 18px 28px;
+    outline: 0;
+
+    &::placeholder {
+      font-family: "Montserrat", sans-serif;
+      color: rgba(0, 0, 0, 0.26);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  // .catalog__btn
+
+  &__btn {
+    flex: 0 0 58px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #0E6300;
+  }
+
+  // .catalog__filters
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+  }
+
+  // .catalog__filter
+
+  &__filter {
+    color: rgba(20, 20, 20, 0.57);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+
+    transition: 0.2s linear;
+
+    &.active {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    // &:hover {
+    //   font-weight: 700;
+    //   color: var(--primary-color);
+    // }
+  }
+
+  &__subfilters-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  // .catalog__subfilters
+
+  &__subfilters {
+    margin: 0 30px;
+  }
+
+  // .catalog__subfilters-wrapper
+
+  &__subfilters-wrapper {}
+
+  // .catalog__subfilter-slide
+
+  &__subfilter-slide {
+    width: fit-content !important;
+  }
+
+  // .catalog__subfilter
+
+  &__subfilter {
+    white-space: nowrap;
+    color: rgba(20, 20, 20, 0.57);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.2s linear;
+
+    &.active {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    // &:hover {
+    //   font-weight: 700;
+    //   color: var(--primary-color);
+    // }
+  }
+
+  // .catalog__subfilters-arrow
+
+  &__subfilters-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        stroke: var(--primary-color);
+      }
+    }
+  }
+
+  // .catalog__subfilters-arrow--prev
+
+  &__subfilters-arrow--prev {
+    left: 0;
+  }
+
+  // .catalog__subfilters-arrow--next
+
+  &__subfilters-arrow--next {
+    right: 0;
+  }
+}
+
+
+.popular {
+
+  // .popular__list
+
+  &__list {}
+
+  // .popular__item
+
+  &__item {}
+
+  // .popular__picture
+
+  &__picture {}
+
+  // .popular__info
+
+  &__info {}
+
+  // .popular__naiming
+
+  &__naiming {}
+
+  // .popular__name
+
+  &__name {}
+
+  // .popular__price
+
+  &__price {}
+
+  // .popular__descr
+
+  &__descr {}
+
+  // .popular__footer
+
+  &__footer {}
+
+  // .popular__status
+
+  &__status {}
+}
+
+.page-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  margin-top: 30px;
+}
+
+.page-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 2px;
+  border: 0.2px solid #000;
+
+  &.active {
+    .page-link {
+      color: #000;
+    }
+  }
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(0, 0, 0, 0.34);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+}

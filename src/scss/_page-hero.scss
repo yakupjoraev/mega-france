@@ -1,0 +1,38 @@
+.page-hero {
+
+  // .page-hero__inner
+
+  &__inner {
+    padding: 140px 0;
+
+    @media (max-width: $breakpoint992) {
+      padding: 100px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 60px 0;
+    }
+  }
+
+  // .page-hero__title
+
+  &__title {
+    text-align: center;
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: normal;
+
+    span {
+      color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.map-contacts {
+  margin-bottom: 60px;
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 40px;
+  }
+
+  // .map-contacts__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+
+    @media (max-width: $breakpoint992) {
+      column-gap: 20px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: flex-start;
+    }
+  }
+
+  // .map-contacts__map
+
+  &__map {
+    flex: 0 1 990px;
+    display: flex;
+    width: auto;
+    height: 540px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+      height: 300px;
+      width: 100%;
+    }
+  }
+
+  // .map-contacts__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  // .map-contacts__title
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  // .map-contacts__label
+
+  &__label {
+    position: relative;
+    margin-bottom: 28px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 20%;
+      height: 4px;
+      background-color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+
+  // .map-contacts__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+
+  // .map-contacts__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  // .map-contacts__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%;
+  }
+
+  // .map-contacts__link
+
+  &__link {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  // .map-contacts__text
+
+  &__text {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .footer__socials {
+    margin-top: 60px;
+
+    @media (max-width: $breakpoint768) {
+      margin-top: 40px;
+    }
+  }
+
+  .footer__label {
+    color: #000;
+
+    @media (max-width: $breakpoint768) {
+      text-align: left;
+    }
+  }
+}

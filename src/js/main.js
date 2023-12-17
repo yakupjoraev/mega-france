@@ -91,3 +91,67 @@ if (window.matchMedia("(max-width: 992px)").matches) {
 }
 
 
+function catalogSubfiltersSlider() {
+  const container = document.querySelector('.catalog');
+
+  if (!container) {
+    return null
+  }
+
+  const swiper = new Swiper('.catalog__subfilters', {
+    slidesPerView: "auto",
+    spaceBetween: 32,
+
+    navigation: {
+      nextEl: '.catalog__subfilters-arrow--next',
+      prevEl: '.catalog__subfilters-arrow--prev',
+    },
+
+  })
+}
+catalogSubfiltersSlider();
+
+
+function map() {
+  const container = document.querySelector('.map-contacts')
+  if (!container) {
+    return null
+  }
+
+  let center = [55.751383, 37.936418];
+
+  function init() {
+
+
+    let map = new ymaps.Map('map', {
+      center: center,
+      zoom: 17
+    });
+
+    let placemark = new ymaps.Placemark(center, {}, {
+      iconLayout: 'default#image',
+      // iconImageHref: '../img/icons/pin.svg',
+      // iconImageHref: '/local/templates/main/img/icons/pin.svg',
+      // iconImageSize: [42, 42],
+      // iconImageOffset: [-14, -64]
+    })
+
+    map.geoObjects.add(placemark);
+
+    map.controls.remove('geolocationControl'); // удаляем геолокацию
+    map.controls.remove('searchControl'); // удаляем поиск
+    map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('typeSelector'); // удаляем тип
+    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+    map.controls.remove('rulerControl'); // удаляем контрол правил
+    // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+  }
+
+  ymaps.ready(init);
+}
+
+map();
+
+
+AOS.init();

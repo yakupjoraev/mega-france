@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -85,11 +86,11 @@
     <section class="little-about">
   <div class="container">
     <div class="little-about__inner">
-      <div class="little-about__picture">
+      <div class="little-about__picture" data-aos="fade-right">
         <img loading="laz" src="./img/little-about/little-about-pic.jpg" alt="little-about pic">
       </div>
 
-      <div class="little-about__info">
+      <div class="little-about__info" data-aos="fade-left">
         <h3 class="little-about__title">
           Немного о <span>компании</span>
         </h3>
@@ -114,7 +115,7 @@
       <h3 class="popular__title">Популярные товары</h3>
 
       <ul class="popular__list">
-        <li class="popular__item">
+        <li class="popular__item" data-aos="fade-up">
           <div class="popular__picture">
             <img loading="laz" src="./img/popular/popular-1.jpg" alt="">
           </div>
@@ -141,7 +142,7 @@
           </div>
         </li>
 
-        <li class="popular__item">
+        <li class="popular__item" data-aos="fade-up">
           <div class="popular__picture">
             <img loading="laz" src="./img/popular/popular-2.jpg" alt="">
           </div>
@@ -167,7 +168,7 @@
           </div>
         </li>
 
-        <li class="popular__item">
+        <li class="popular__item" data-aos="fade-up">
           <div class="popular__picture">
             <img loading="laz" src="./img/popular/popular-3.jpg" alt="">
           </div>
@@ -193,7 +194,7 @@
           </div>
         </li>
 
-        <li class="popular__item">
+        <li class="popular__item" data-aos="fade-up">
           <div class="popular__picture">
             <img loading="laz" src="./img/popular/popular-1.jpg" alt="">
           </div>
@@ -220,7 +221,7 @@
           </div>
         </li>
 
-        <li class="popular__item">
+        <li class="popular__item" data-aos="fade-up">
           <div class="popular__picture">
             <img loading="laz" src="./img/popular/popular-2.jpg" alt="">
           </div>
@@ -246,7 +247,7 @@
           </div>
         </li>
 
-        <li class="popular__item">
+        <li class="popular__item" data-aos="fade-up">
           <div class="popular__picture">
             <img loading="laz" src="./img/popular/popular-3.jpg" alt="">
           </div>
@@ -277,7 +278,7 @@
     </div>
   </div>
 </section>
-    <section class="reviews">
+    <section class="reviews" data-aos="fade-up">
   <div class="container">
     <div class="reviews__inner">
       <div class="reviews__header">
@@ -422,8 +423,8 @@
     <section class="map-contacts">
   <div class="container">
     <div class="map-contacts__inner">
-      <div class="map-contacts__map" id="map"></div>
-      <div class="map-contacts__info">
+      <div class="map-contacts__map" id="map" data-aos="fade-right"></div>
+      <div class="map-contacts__info" data-aos="fade-left">
         <h3 class="map-contacts__title">
           Наши <span>контакты</span>
         </h3>
@@ -436,7 +437,7 @@
               <img loading="lazy" width="28" height="28" src="./img/map-contacts/geo.png" alt="geo">
               <span>Адрес</span>
             </div>
-            <a class="map-contacts__link"
+            <a class="map-contacts__link" target="_blank"
               href="https://yandex.ru/maps/org/mega_frants/35592130500/?ll=37.941610%2C55.751158&z=14">Носовихинское ш.,
               вл247, микрорайон Салтыковка, Балашиха</a>
           </li>
@@ -550,7 +551,8 @@
 </footer>
 
 </body>
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script src="./js/aos.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
