@@ -1450,6 +1450,10 @@ h3 span {
             justify-content: space-between;
   }
 
+  .header--main .menu__item-link {
+    color: var(--text-color);
+  }
+
   .hero {
     padding: 200px 0 40px;
   }
@@ -1697,6 +1701,8 @@ h3 span {
   }
 
   .menu__item-link {
+    font-weight: 600;
+    font-size: 18px;
     color: var(--text-color);
   }
 

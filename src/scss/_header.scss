@@ -52,6 +52,10 @@
     &::before {
       background-color: var(--white-color);
     }
+
+    @media (max-width: $breakpoint992) {
+      color: var(--text-color);
+    }
   }
 }
 
@@ -243,6 +247,8 @@
 
   // .menu__link
   .menu__item-link {
+    font-weight: 600;
+    font-size: 18px;
     color: var(--text-color);
   }
 
