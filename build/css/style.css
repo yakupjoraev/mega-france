@@ -139,8 +139,12 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 0 20px;
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
+}
+
+body {
   background-color: var(--white-color);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -1069,6 +1073,7 @@ h3 span {
   -webkit-column-gap: 18px;
      -moz-column-gap: 18px;
           column-gap: 18px;
+  margin-bottom: 20px;
 }
 
 .catalog__filter {

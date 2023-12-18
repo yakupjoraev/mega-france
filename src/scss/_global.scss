@@ -22,9 +22,12 @@
   }
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 // Body Locked
 body {
-  overflow-x: hidden;
   background-color: var(--white-color);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
