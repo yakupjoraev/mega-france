@@ -1,5 +1,6 @@
 .reviews {
   margin: 60px 0;
+  overflow: hidden;
 
   @media (max-width: $breakpoint992) {
     margin: 40px 0;

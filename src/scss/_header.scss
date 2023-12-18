@@ -55,6 +55,10 @@
 
     @media (max-width: $breakpoint992) {
       color: var(--text-color);
+
+      &::before {
+        background-color: var(--text-color);
+      }
     }
   }
 }

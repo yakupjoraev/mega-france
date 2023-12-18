@@ -139,11 +139,6 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 0 20px;
 }
 
-body,
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: var(--white-color);
   font-family: "Montserrat", sans-serif;
@@ -451,6 +446,7 @@ h3 span {
 
 .little-about {
   padding: 50px 0 60px;
+  overflow: hidden;
 }
 
 .little-about__inner {
@@ -523,6 +519,7 @@ h3 span {
 
 .popular {
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .popular__inner {
@@ -682,6 +679,7 @@ h3 span {
 
 .reviews {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 .reviews__header {
@@ -805,6 +803,7 @@ h3 span {
 
 .map-contacts {
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .map-contacts__inner {
@@ -935,6 +934,10 @@ h3 span {
   color: #000;
 }
 
+.page-hero {
+  overflow: hidden;
+}
+
 .page-hero__inner {
   padding: 140px 0;
 }
@@ -953,6 +956,7 @@ h3 span {
 
 .catalog {
   margin: 60px 0 60px;
+  overflow: hidden;
 }
 
 .catalog__header {
@@ -1452,6 +1456,10 @@ h3 span {
 
   .header--main .menu__item-link {
     color: var(--text-color);
+  }
+
+  .header--main .menu__item-link::before {
+    background-color: var(--text-color);
   }
 
   .hero {

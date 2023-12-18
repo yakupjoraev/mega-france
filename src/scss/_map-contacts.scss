@@ -1,5 +1,6 @@
 .map-contacts {
   margin-bottom: 60px;
+  overflow: hidden;
 
   @media (max-width: $breakpoint768) {
     margin-bottom: 40px;
