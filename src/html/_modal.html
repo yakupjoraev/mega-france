@@ -1,9 +1,24 @@
 <!-- Modal -->
-<div class="modal__wrapper">
-    <div class="modal">
-        <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
-        <div class="modal__title"><span>Заголовок 2</span> </div>
-        <div class="modal__body">
-        </div>
-    </div>
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="close-modal-btn">&times;</span>
+
+    <form class="modal-form" action="#">
+      <div class="modal-form__header">
+        <img class="modal-form__logo" src="./img/header/header-logo-2.svg" alt="logo">
+
+        <h2 class="modal-form__title">Оставить заявку</h2>
+      </div>
+
+      <div class="modal-form__main">
+        <input class="modal-form__input js-input" name="Имя" type="text" placeholder="Имя">
+        <input class="modal-form__input js-input  js-input js-input-email" name="E-mail" type="text"
+          placeholder="E-mail">
+        <textarea class="modal-form__input modal-form__textarea" name="Комментарии"
+          placeholder="Комментарии"></textarea>
+
+        <button type="submit" class="modal-form__btn">Отправить</button>
+      </div>
+    </form>
+  </div>
 </div>
