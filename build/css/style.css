@@ -1205,6 +1205,16 @@ h3 span {
   line-height: normal;
 }
 
+.page-item--prev {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.page-item--prev svg {
+  margin-bottom: 2px;
+}
+
 .about {
   padding-top: 30px;
   margin-bottom: 60px;

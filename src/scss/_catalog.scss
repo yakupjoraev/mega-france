@@ -263,3 +263,11 @@
   font-weight: 500;
   line-height: normal;
 }
+
+.page-item--prev {
+  transform: rotate(180deg);
+
+  svg {
+    margin-bottom: 2px;
+  }
+}
