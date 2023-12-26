@@ -254,7 +254,9 @@ h3 span {
 }
 
 .logo__img {
-  max-width: 100%;
+  max-width: 180px;
+  width: 100%;
+  max-height: 68px;
 }
 
 .menu {
@@ -1684,6 +1686,10 @@ h3 span {
 
   .header--main .menu__item-link::before {
     background-color: var(--text-color);
+  }
+
+  .logo__img {
+    max-width: 140px;
   }
 
   .hero {
